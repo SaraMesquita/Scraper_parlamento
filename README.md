@@ -1,3 +1,3 @@
 # Scraper Parlamento Português
 
-Contém informação sobre os deputados extraída do [Parlamento.pt.](https://www.parlamento.pt/)
+Contém informação sobre os deputados extraída do [Parlamento.pt](https://www.parlamento.pt/) (Legislatura 2019).
