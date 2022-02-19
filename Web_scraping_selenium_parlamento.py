@@ -1,4 +1,4 @@
-# coding: utf-8
+#Importing packages
 import os, sys
 import time
 import pandas as pd
@@ -21,14 +21,14 @@ def save_excel (database=pd.DataFrame(), file_name=''):
 def scrating_deputies ():
 
     url = 'https://www.parlamento.pt/DeputadoGP/Paginas/DeputadosemFuncoes.aspx'
-    #driver = webdriver.Safari(executable_path = '/usr/bin/safaridriver')
+    #open an url in google chrome
     driver = webdriver.Chrome(
         executable_path=project_root + "/chromedriver.exe")
 
     driver.get(url)
     driver.maximize_window()
     time.sleep(3)
-    driver.find_element(By.XPATH, './/*[@id="cconsent-bar"]/div/div[2]/div/div[3]/button').click()
+    driver.find_element(By.XPATH, './/*[@id="cconsent-bar"]/div/div[2]/div/div[3]/button').click() #cookies
 
     db_parliament = pd.DataFrame()
 
@@ -109,7 +109,6 @@ def scrating_deputiesInfo ():
 
         deputy_link = deputy_row['Link']
 
-        #driver = webdriver.Safari(executable_path = '/usr/bin/safaridriver')
         driver = webdriver.Chrome(
         executable_path=project_root + "/chromedriver.exe")
 
@@ -167,5 +166,5 @@ def scrating_deputiesInfo ():
     
 if __name__ == "__main__":
 
-    #scrating_deputies ()
+    scrating_deputies () #comment this after creating the first dataset and run again to create a new dataset 'ParliamentCompleteInfo' and full info
     scrating_deputiesInfo ()
