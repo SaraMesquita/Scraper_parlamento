@@ -163,5 +163,5 @@ def scrating_deputiesInfo ():
     
 if __name__ == "__main__":
 
-    scrating_deputies () #comment this after creating the first dataset and run again to create a new dataset 'ParliamentCompleteInfo' and full info
+    scrating_deputies () #comment this after creating the first dataset and run again to create a new dataset 'ParliamentCompleteInfo' with full info
     scrating_deputiesInfo ()
