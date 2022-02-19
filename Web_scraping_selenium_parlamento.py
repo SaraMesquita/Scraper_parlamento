@@ -157,9 +157,6 @@ def scrating_deputiesInfo ():
 
         save_excel(db_parliamentInfo, 'ParliamentCompleteInfo')
         
-        ## Cargos exercidos - span - inside - div - class="TitulosBio AlinhaL"   -> get list of div - class="TextoRegular AlinhaL" / span - getText() (lop and add in a list)
-        ## Comissões Parlamentares a que pertence - span - inside - div - class="TitulosBio AlinhaL"   -> get a list of div - class="TextoRegular AlinhaL" / span - getText() (lop and add in a list)
-
         driver.quit()
 
     save_excel(db_parliamentInfo, 'ParliamentCompleteInfo')
